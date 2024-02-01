@@ -79,7 +79,7 @@ let contenidoHTML = impares.map(elemento => `<p>${elemento}</p>`).join('');
   
 
 /* Output Evens Only Array */
-document.querySelector("#evens").innerHTML = numbersArray.filter (number => % 2 === 0);
+//document.querySelector("#evens").innerHTML = numbersArray.filter (number => % 2 === 0);
 /* Output Sum of Org. Array */
 numbersArray.reduce((sum, number) => sum + number)
 /* Output Multiplied by 2 Array */
