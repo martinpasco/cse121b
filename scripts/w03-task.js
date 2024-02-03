@@ -67,21 +67,31 @@ function getTotal() {
 
 }
 
-document,getElementById("getTotal").addEventListener("click", getTotal);
+document.getElementById("getTotal").addEventListener("click", getTotal);
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+//console.log(numbersArray.join(", "));
 document.getElementById("array").innerHTML = numbersArray.join(", ");
+
 /* Output Odds Only Array */
-let impares = numbersArrayrray.filter(elemento => elemento % 2 !== 0);
-let contenidoHTML = impares.map(elemento => `<p>${elemento}</p>`).join('');
-  
+let impares = numbersArray.filter(elemento => elemento % 2 !== 0);
+let contenidoHTML = impares.map(elemento => `<p>${elemento}</p>`).join(', ');
+document.getElementById("odds").innerHTML = impares.join(", ");  
 
 /* Output Evens Only Array */
-//document.querySelector("#evens").innerHTML = numbersArray.filter (number => % 2 === 0);
+let pares = numbersArray.filter(elementos => elementos % 2 == 0);
+let contenidosHTML = pares.map(elementos => `<p>${elementos}</p>`).join(', ');
+document.getElementById("evens").innerHTML = pares.join(", ");  
+
 /* Output Sum of Org. Array */
-numbersArray.reduce((sum, number) => sum + number)
+let opadd = numbersArray.reduce((sum, number) => sum + number, 0);
+document.getElementById("sumOfArray").innerHTML = opadd;
+
 /* Output Multiplied by 2 Array */
-numbersArray.map(number => number * 2)
+let sumArray = numbersArray.map(sumar => sumar * 2)
+document.querySelector('#multiplied').innerHTML = sumArray;
 /* Output Sum of Multiplied by 2 Array */
+let mulptArray = opadd * 2;
+document.querySelector('#sumOfMultiplied').innerHTML = mulptArray;
