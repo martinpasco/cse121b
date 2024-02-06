@@ -8,7 +8,7 @@ let myProfile = {
         alt: "My Profile Picture"
     },
     favoriteFoods: ["Chocolate", "Tacos", "Seco de Pollo"],
-    Hobies: ["ciclying", "Swiming", "soccer"],
+    Hobies: ["ciclying", "Swiming", "Soccer"],
     placeLived: ["Lima- Perú", "Miami - USA"]
 };
 
@@ -23,7 +23,6 @@ myProfile.favoriteFoods.forEach(item => {
     let li = document.createElement("li");
     li.textContent= item;
     document.querySelector("#favorite-foods").appendChild(li);
-
 })
 
 /* Hobbies List */
@@ -31,7 +30,6 @@ myProfile.Hobies.forEach(item => {
     let li = document.createElement("li");
     li.textContent= item;
     document.querySelector("#hobbies").appendChild(li);
-
 })
 
 /* Places Lived DataList */
@@ -39,7 +37,6 @@ myProfile.placeLived.forEach(item => {
     let li = document.createElement("li");
     li.textContent= item;
     document.querySelector("#places-lived").appendChild(li);
-
 })
 
 
