@@ -8,7 +8,7 @@ let myProfile = {
         alt: "My Profile Picture"
     },
     favoriteFoods: ["Chocolate", "Tacos", "Seco de Pollo"],
-    Hobies: ["ciclying", "Swiming", "Soccer"],
+    Hobies: ["Ciclying", "Swiming", "Soccer"],
     placeLived: ["Lima- Perú", "Miami - USA"]
 };
 
