@@ -9,7 +9,8 @@ let myProfile = {
     },
     favoriteFoods: ["Ceviche", "Causa de Atún", "Seco de Pollo"],
     Hobies: ["Ciclying", "Swiming", "Soccer"],
-    placeLived: ["Lima- Perú", "Miami - USA"]
+    placeLived: ["Lima- Perú", "Miami - USA"],
+    timesLived : ["34 Years","9 Years"]
 };
 
 /* DOM Manipulation - Output */
@@ -27,9 +28,9 @@ myProfile.favoriteFoods.forEach(item => {
 
 /* Hobbies List */
 myProfile.Hobies.forEach(item => {
-    let ul = document.createElement("ul");
-    ul.textContent= item;
-    document.querySelector("#hobbies").appendChild(ul);
+    let li = document.createElement("li");
+    li.textContent= item;
+    document.querySelector("#hobbies").appendChild(li);
 })
 
 /* Places Lived DataList */
